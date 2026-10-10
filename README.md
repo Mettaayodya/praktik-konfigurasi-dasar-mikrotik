@@ -26,8 +26,6 @@ Konfigurasi yang diterapkan meliputi koneksi WAN melalui Wi-Fi, pengaturan LAN m
 
 ## 4. Topologi Jaringan
 
-![Topologi Jaringan MikroTik](topologi-jaringan-mikrotik.png)
-
 Gambaran topologi jaringan dalam bentuk teks:
 
     Hotspot HP
@@ -76,19 +74,19 @@ Gambaran topologi jaringan dalam bentuk teks:
 
 ## 6. Tahapan Implementasi
 
-### 6.1. Konfigurasi WAN
+### a. Konfigurasi WAN
 
 Mengonfigurasi `wlan1` sebagai antarmuka Wi-Fi Client dan menghubungkannya ke hotspot HP. DHCP Client diaktifkan pada `wlan1` agar MikroTik memperoleh alamat IP secara otomatis dari jaringan hotspot.
 
-### 6.2. Konfigurasi LAN
+### b. Konfigurasi LAN
 
 Menggunakan antarmuka `bridge` sebagai gateway jaringan lokal dengan alamat IP `192.168.88.1/24`. Port Ethernet yang menjadi anggota bridge dapat digunakan untuk menghubungkan perangkat klien ke jaringan lokal.
 
-### 6.3. Konfigurasi DHCP Server
+### c. Konfigurasi DHCP Server
 
 Mengaktifkan DHCP Server pada `bridge` agar perangkat klien memperoleh alamat IP secara otomatis tanpa perlu melakukan konfigurasi IP secara manual.
 
-### 6.4. Konfigurasi NAT
+### d. Konfigurasi NAT
 
 Membuat aturan NAT dengan parameter berikut:
 
