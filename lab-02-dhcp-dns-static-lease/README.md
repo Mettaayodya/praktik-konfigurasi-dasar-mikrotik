@@ -1,4 +1,4 @@
-# Lab 02 — DHCP, DNS, dan Static Lease pada MikroTik
+# Lab 2 — DHCP, DNS, dan Static Lease pada MikroTik
 
 ## 1. Deskripsi
 
